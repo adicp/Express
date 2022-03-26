@@ -25,7 +25,7 @@ const port = 8000;
 
 const createUser = () => {
     const newUser = {
-        _id: faker.datatype.number(),
+        id: faker.datatype.number(),
         firstName: faker.name.firstName(),
         lastName: faker.name.lastName(),
         phoneNumber: faker.phone.phoneNumber(),
@@ -49,12 +49,12 @@ const createUser = () => {
 //     return newCompany;
 // };
 const newAccount = createUser();
-// console.log(faker.name);
+// console.log(newAccount);
 
 app.get("/api", (req, res) => {
-    res.json( {newAccount} );
+    res.json( {message: "Hello there"} );
 });
 
-// const server = app.listen(8000, () =>
-//   console.log(`Server is locked and loaded on port ${server.address().port}!`)
-// );
+const server = app.listen(port, () =>
+    console.log(`Server is locked and loaded on port ${port}!`)
+);
