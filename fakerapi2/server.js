@@ -1,7 +1,7 @@
 const express = require("express");
 const faker = require ("faker");
 const app = express();
-const port = 3000;
+const port = 8000;
 
 // Create 2 functions: createUser, createCompany that return an object with the properties listed above
 // User Object
