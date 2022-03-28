@@ -32,7 +32,7 @@ const Company = () => {
 };
 
 app.get("/api", (req, res) => {
-    res.json({message: "Welcome to Express"});
+    res.json({message: "Welcome to Adelajda Cupi"});
 });
 
 app.get("/api/users/new", (req, res) => {
